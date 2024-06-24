@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>CRUD</h1>
+
+    <!-- Formulario para agregar nuevo registro -->
+    <h2>Agregar Nuevo Registro</h2>
+    <form id="formularioAgregar">
+        <label>Cédula</label>
+        <input type="text" id="cedula" required>
+        <label>Nombre</label>
+        <input type="text" id="nombre" required>
+        <label>Edad</label>
+        <input type="number" id="edad" required>
+        <label>Dirección</label>
+        <input type="text" id="direccion" required>
+        <button type="submit">Agregar</button>
+    </form>
+
+    <!-- Tabla para mostrar y manipular registros existentes -->
+    <h2>Registros</h2>
+    <table id="tablaRegistros">
+        <thead>
+            <tr>
+                <th>Cédula</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Dirección</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyRegistros">
+            <!-- Aquí se agregarán dinámicamente los registros -->
+        </tbody>
+    </table>
+    <section>
+        <button id="logout">Salir</button>
+    </section>
+    <!-- Script JavaScript -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
